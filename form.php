@@ -9,9 +9,25 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">---</a></li>
+                <li><a href="gridlayout.php">Grid</a></li>
+                <li class="logo"><a href="../index.html">Essentium Logo</a></li>
+                <li><a href="form.php">Form</a></li>
+                <li><a href="#">---</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <h1>Form Page</h1>
 
     <!-- Printer Reset Form -->
