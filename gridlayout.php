@@ -19,11 +19,11 @@
 	<header>
         <nav>
             <ul>
-                <li><a href="#">---</a></li>
-                <li><a href="gridlayout.php">Grid</a></li>
-                <li class="logo"><a href="../index.html">Essentium Logo</a></li>
-                <li><a href="form.php">Form</a></li>
-                <li><a href="#">---</a></li>
+                <li class= "desktop"><a href="gridlayout.php">Grid</a></li>
+				<li class="logo"><a href="../index.html">Essentium Logo</a></li>
+				<li class= "mobile"><a href="gridlayout.php"><h3>Grid</h3></a></li>
+				<li class= "mobile"><a href="form.php"><h3>Form</h3></a></li>
+				<li class= "desktop"><a href="form.php">Form</a></li>
             </ul>
         </nav>
 	</header>

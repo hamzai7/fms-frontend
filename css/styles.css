@@ -6,6 +6,8 @@ body {
     padding: 0;
 }
 
+/* Header */
+
 header {
     background-color: black;
     background-image: url("https://www.essentium.com/wp-content/uploads/2020/08/Screen-Shot-2020-08-25-at-12.11.03-PM.png");
@@ -16,13 +18,12 @@ header {
     text-align: center;
 
 }
-/* Header */
 
 header a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    margin-top: 40px;
+    margin: 40px;
 }
 
 header .logo a {
@@ -37,6 +38,10 @@ header .logo a {
     width: 100px;
 }
 
+header .mobile {
+    display: none;
+}
+
 nav ul {
     margin: 0;
     padding: 0;
@@ -47,6 +52,34 @@ nav li {
     display: inline-block;
     margin-right: 20px;
 }
+/* RESPONSIVE RULES */
+
+@media screen and (max-width: 715px) {
+    header {
+        background-size: 175%;
+        height: 300px;
+    }
+
+    header a {
+        margin: 0px;
+        margin-top: 40px;
+    }
+
+    header .logo a {
+        height: 100px;
+        position: relative;
+        top: -15px;
+    }
+
+    header .mobile {
+        display: block;
+        padding: 10px;
+    }
+
+    header .desktop {
+        display: none;
+    }
+}
 
 /* Features */
 
@@ -56,10 +89,12 @@ nav li {
     padding: 20px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .features figure {
     margin: auto;
+    padding: 10px;
     text-align: center;
     text-transform: uppercase;
     width: 200px;
@@ -69,13 +104,23 @@ nav li {
     border: 1px solid white;
     border-radius: 50%;
     box-shadow: grey 0px 0px 10px;
+    height: 200px;
     width: 200px;
 }
 
-/* Features */
+/* Responsive Rules 
+
+    @media screen and (max-width: 715px) {
+        .features {
+            display: block;
+        }
+    }
+*/
+
+/* Footer */
 
 footer {
-    background: black;
+    background: rgb(168, 168, 168);
     columns: grey;
     font-size: 12px;
     padding: 20px 20px;
