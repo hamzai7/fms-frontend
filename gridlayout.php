@@ -58,7 +58,7 @@
 								include "db_connect.php"; //
 							
 								//search database for the printer and info
-								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM Printers_table WHERE PrinterID LIKE 'Printer 01'";
+								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 01'";
 								$result = $mysqli->query($sql);
 							
 								if ($result->num_rows > 0) {
@@ -83,7 +83,7 @@
 						<p>
 							<?php
 								//search database for printer and info
-								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM Printers_table WHERE PrinterID LIKE 'Printer 02'";
+								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 02'";
 								$result = $mysqli->query($sql);
 							
 								if ($result->num_rows > 0) {
@@ -107,7 +107,7 @@
 						<p>
 							<?php
 								//search database for printer and info
-								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM Printers_table WHERE PrinterID LIKE 'Printer 03'";
+								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 03'";
 								$result = $mysqli->query($sql);
 							
 								if ($result->num_rows > 0) {
@@ -133,7 +133,7 @@
 						<p>
 							<?php
 								//search database for printer and info
-								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM Printers_table WHERE PrinterID LIKE 'Printer 04'";
+								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 04'";
 								$result = $mysqli->query($sql);
 							
 								if ($result->num_rows > 0) {
@@ -157,7 +157,7 @@
 						<p>
 							<?php
 								//search database for the printer and info
-								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM Printers_table WHERE PrinterID LIKE 'Printer 05'";
+								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 05'";
 								$result = $mysqli->query($sql);
 							
 								if ($result->num_rows > 0) {
@@ -181,7 +181,7 @@
 						<p>
 							<?php
 								//search database for the printer and info
-								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM Printers_table WHERE PrinterID LIKE 'Printer 06'";
+								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 06'";
 								$result = $mysqli->query($sql);
 							
 								if ($result->num_rows > 0) {
@@ -207,7 +207,7 @@
 						<p>
 							<?php
 								//search database for the printer and info
-								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM Printers_table WHERE PrinterID LIKE 'Printer 07'";
+								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 07'";
 								$result = $mysqli->query($sql);
 							
 								if ($result->num_rows > 0) {
@@ -231,7 +231,7 @@
 						<p>
 							<?php
 								//search database for the printer and info
-								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM Printers_table WHERE PrinterID LIKE 'Printer 08'";
+								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 08'";
 								$result = $mysqli->query($sql);
 							
 								if ($result->num_rows > 0) {
@@ -255,7 +255,7 @@
 						<p>
 							<?php
 								//search database for the printer and info
-								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM Printers_table WHERE PrinterID LIKE 'Printer 09'";
+								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 09'";
 								$result = $mysqli->query($sql);
 							
 								if ($result->num_rows > 0) {
@@ -285,7 +285,7 @@
 						<p>
 							<?php
 								//search database for the printer and info
-								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM Printers_table WHERE PrinterID LIKE 'Printer 10'";
+								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 10'";
 								$result = $mysqli->query($sql);
 							
 								if ($result->num_rows > 0) {
@@ -309,7 +309,7 @@
 						<p>
 							<?php
 								//search database for the printer and info
-								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM Printers_table WHERE PrinterID LIKE 'Printer 11'";
+								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 11'";
 								$result = $mysqli->query($sql);
 							
 								if ($result->num_rows > 0) {
@@ -333,7 +333,7 @@
 						<p>
 							<?php
 								//search database for the printer and info
-								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM Printers_table WHERE PrinterID LIKE 'Printer 12'";
+								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 12'";
 								$result = $mysqli->query($sql);
 							
 								if ($result->num_rows > 0) {
@@ -359,7 +359,7 @@
 						<p>
 							<?php
 								//search database for the printer and info
-								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM Printers_table WHERE PrinterID LIKE 'Printer 13'";
+								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 13'";
 								$result = $mysqli->query($sql);
 							
 								if ($result->num_rows > 0) {
@@ -383,7 +383,7 @@
 						<p>
 							<?php
 								//search database for the printer and info
-								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM Printers_table WHERE PrinterID LIKE 'Printer 14'";
+								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 14'";
 								$result = $mysqli->query($sql);
 							
 								if ($result->num_rows > 0) {
@@ -407,7 +407,7 @@
 						<p>
 							<?php
 								//search database for the printer and info
-								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM Printers_table WHERE PrinterID LIKE 'Printer 15'";
+								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 15'";
 								$result = $mysqli->query($sql);
 							
 								if ($result->num_rows > 0) {
@@ -433,7 +433,7 @@
 						<p>
 							<?php
 								//search database for the printer and info
-								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM Printers_table WHERE PrinterID LIKE 'Printer 16'";
+								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 16'";
 								$result = $mysqli->query($sql);
 							
 								if ($result->num_rows > 0) {
@@ -457,7 +457,7 @@
 						<p>
 							<?php
 								//search database for the printer and info
-								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM Printers_table WHERE PrinterID LIKE 'Printer 17'";
+								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 17'";
 								$result = $mysqli->query($sql);
 							
 								if ($result->num_rows > 0) {
@@ -481,7 +481,7 @@
 						<p>
 							<?php
 								//search database for the printer and info
-								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM Printers_table WHERE PrinterID LIKE 'Printer 18'";
+								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 18'";
 								$result = $mysqli->query($sql);
 							
 								if ($result->num_rows > 0) {
@@ -525,7 +525,7 @@
 						<p>
 							<?php
 								//search database for the printer and info
-								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM Printers_table WHERE PrinterID LIKE 'Printer 19'";
+								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 19'";
 								$result = $mysqli->query($sql);
 							
 								if ($result->num_rows > 0) {
@@ -549,7 +549,7 @@
 						<p>
 							<?php
 								//search database for the printer and info
-								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM Printers_table WHERE PrinterID LIKE 'Printer 20'";
+								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 20'";
 								$result = $mysqli->query($sql);
 							
 								if ($result->num_rows > 0) {
@@ -573,7 +573,7 @@
 						<p>
 							<?php
 								//search database for the printer and info
-								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM Printers_table WHERE PrinterID LIKE 'Printer 21'";
+								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 21'";
 								$result = $mysqli->query($sql);
 							
 								if ($result->num_rows > 0) {
@@ -603,7 +603,7 @@
 						<p>
 							<?php
 								//search database for the printer and info
-								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM Printers_table WHERE PrinterID LIKE 'Printer 22'";
+								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 22'";
 								$result = $mysqli->query($sql);
 							
 								if ($result->num_rows > 0) {
@@ -627,7 +627,7 @@
 						<p>
 							<?php
 								//search database for the printer and info
-								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM Printers_table WHERE PrinterID LIKE 'Printer 23'";
+								$sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 23'";
 								$result = $mysqli->query($sql);
 							
 								if ($result->num_rows > 0) {
