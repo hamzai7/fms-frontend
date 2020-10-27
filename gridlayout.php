@@ -51,7 +51,7 @@
 				<div class="row">
 					<div class="col-md-4">
 						<h2>
-							<b>Printer 01</b>
+							<b>Spot: A1</b>
 						</h2>
 						<p>
 							<?php
@@ -78,7 +78,7 @@
 					</div>
 					<div class="col-md-4">
 						<h2>
-							<b>Printer 02</b>
+							<b>Spot A2</b>
 						</h2>
 						<p>
 							<?php
@@ -102,7 +102,7 @@
 					</div>
 					<div class="col-md-4">
 						<h2>
-							<b>Printer 03</b>
+							<b>Spot: A3</b>
 						</h2>
 						<p>
 							<?php
@@ -128,7 +128,7 @@
 				<div class="row">
 					<div class="col-md-4">
 						<h2>
-							<b>Printer 04</b>
+							<b>Spot: A4</b>
 						</h2>
 						<p>
 							<?php
@@ -152,7 +152,7 @@
 					</div>
 					<div class="col-md-4">
 						<h2>
-							<b>Printer 05</b>
+							<b>Spot: A5</b>
 						</h2>
 						<p>
 							<?php
@@ -176,7 +176,7 @@
 					</div>
 					<div class="col-md-4">
 						<h2>
-							<b>Printer 06</b>
+							<b>Spot: A6</b>
 						</h2>
 						<p>
 							<?php
@@ -202,7 +202,7 @@
 				<div class="row">
 					<div class="col-md-4">
 						<h2>
-							<b>Printer 07</b>
+							<b>Spot: A7</b>
 						</h2>
 						<p>
 							<?php
@@ -226,7 +226,7 @@
 					</div>
 					<div class="col-md-4">
 						<h2>
-							<b>Printer 08</b>
+							<b>Spot: A8</b>
 						</h2>
 						<p>
 							<?php
@@ -250,7 +250,7 @@
 					</div>
 					<div class="col-md-4">
 						<h2>
-							<b>Printer 09</b>
+							<b>Spot: A9</b>
 						</h2>
 						<p>
 							<?php
@@ -280,7 +280,7 @@
 				<div class="row">
 					<div class="col-md-4">
 						<h2>
-							<b>Printer 10</b>
+							<b>Spot: B1</b>
 						</h2>
 						<p>
 							<?php
@@ -304,7 +304,7 @@
 					</div>
 					<div class="col-md-4">
 						<h2>
-							<b>Printer 11</b>
+							<b>Spot: B2</b>
 						</h2>
 						<p>
 							<?php
@@ -328,7 +328,7 @@
 					</div>
 					<div class="col-md-4">
 						<h2>
-							<b>Printer 12</b>
+							<b>Spot: B3</b>
 						</h2>
 						<p>
 							<?php
@@ -354,7 +354,7 @@
 				<div class="row">
 					<div class="col-md-4">
 						<h2>
-							<b>Printer 13</b>
+							<b>Spot: B4</b>
 						</h2>
 						<p>
 							<?php
@@ -378,7 +378,7 @@
 					</div>
 					<div class="col-md-4">
 						<h2>
-							<b>Printer 14</b>
+							<b>Spot: B5</b>
 						</h2>
 						<p>
 							<?php
@@ -402,7 +402,7 @@
 					</div>
 					<div class="col-md-4">
 						<h2>
-							<b>Printer 15</b>
+							<b>Spot: B6</b>
 						</h2>
 						<p>
 							<?php
@@ -428,7 +428,7 @@
 				<div class="row">
 					<div class="col-md-4">
 						<h2>
-							<b>Printer 16</b>
+							<b>Spot: B7</b>
 						</h2>
 						<p>
 							<?php
@@ -452,7 +452,7 @@
 					</div>
 					<div class="col-md-4">
 						<h2>
-							<b>Printer 17</b>
+							<b>Spot: B8</b>
 						</h2>
 						<p>
 							<?php
@@ -476,7 +476,7 @@
 					</div>
 					<div class="col-md-4">
 						<h2>
-							<b>Printer 18</b>
+							<b>Spot: B9</b>
 						</h2>
 						<p>
 							<?php
@@ -520,7 +520,7 @@
 				<div class="row">
 					<div class="col-md-4">
 						<h2>
-							<b>Printer 19</b>
+							<b>Spot: C1</b>
 						</h2>
 						<p>
 							<?php
@@ -544,7 +544,7 @@
 					</div>
 					<div class="col-md-4">
 						<h2>
-							<b>Printer 20</b>
+							<b>Spot: C2</b>
 						</h2>
 						<p>
 							<?php
@@ -568,7 +568,7 @@
 					</div>
 					<div class="col-md-4">
 						<h2>
-							<b>Printer 21</b>
+							<b>Spot: C3</b>
 						</h2>
 						<p>
 							<?php
@@ -598,7 +598,7 @@
 				<div class="row">
 					<div class="col-md-4">
 						<h2>
-							<b>Printer 22</b>
+							<b>Spot: D1</b>
 						</h2>
 						<p>
 							<?php
@@ -622,7 +622,7 @@
 					</div>
 					<div class="col-md-4">
 						<h2>
-							<b>Printer 23</b>
+							<b>Spot: D2</b>
 						</h2>
 						<p>
 							<?php
