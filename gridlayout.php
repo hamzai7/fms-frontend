@@ -64,7 +64,7 @@
 								if ($result->num_rows > 0) {
 									//output data of each row
 									while($row = $result->fetch_assoc()) {
-										echo "<div> <h4>Status: </h4>" . $row["Printer_status"]. "</div> <div> <h4>User: </h4>" . $row["Printer_user"]. "</div> <div> <h4>Last used for: </h4>" . $row["Printer_usetemp"]. "</div>";
+										echo "<h4>Status: </h4>" . $row["Printer_status"]. "<br> <br> <h4>User: </h4>" . $row["Printer_user"]. "<br> <br> <h4>Last used for: </h4>" . $row["Printer_usetemp"]. "<br>";
 									}
 								} else {
 									echo "0 results";
@@ -78,7 +78,7 @@
 					</div>
 					<div class="col-md-4">
 						<h2>
-							<b>Spot A2</b>
+							<b>Spot: A2</b>
 						</h2>
 						<p>
 							<?php
