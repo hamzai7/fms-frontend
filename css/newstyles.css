@@ -1,0 +1,90 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: black;
+}
+
+.container-fluid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.block {
+    align-items: flex-end;
+    align-content: center;
+    background-color: white;
+    border-radius: 40%;
+    display: inline-block;
+    
+    padding: 20px;
+}
+
+.block div {
+    align-content: center;
+    align-items: flex-end;
+    background-color: orange;
+    display: inline-block;
+    padding: 5px;
+}
+
+.output {
+    grid-column: 1/-1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+
+
+.container {
+    height: 130vh;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-content: center;
+  }
+.cell {
+align-content: center;
+}
+.cell-1 {
+background: grey;
+}
+.cell-2 {
+background: grey;
+}
+.cell-3 {
+background: royalblue;
+}
+.cell-4 {
+background: gold;
+}
+.cell-5 {
+background: blueviolet;
+}
+.cell-6 {
+background: limegreen;
+}
+.cell-7 {
+background: coral;
+}
+.cell-8 {
+background: lightseagreen;
+}
+.cell-9 {
+background: maroon;
+}
+
+
