@@ -12,6 +12,7 @@
 
 	<!-- Local CSS -->
 	<link rel="stylesheet" href="css/styles.css">
+	<script defer src="js/script.js"></script>
 </head>
 
 <body>
@@ -72,9 +73,17 @@
 								//add $mysqli->close(); to close database connection later
 							?>
 						</p>
-						<p>
-							<a href="form.php">Go to the update form</a>
-						</p>
+						<button data-modal-target="#modal" class="modal-button">Open Modal</button>
+						<div class="modal" id="modal">
+							<div class="modal-header">
+								<div class="title">Example Modal</div>
+								<button data-close-button class="close-button">&times;</button>
+							</div>
+							<div class="modal-body">
+								Example text
+							</div>
+						</div>
+						<div id="overlay"></div>
 					</div>
 					<div class="col-md-4">
 						<h2>
