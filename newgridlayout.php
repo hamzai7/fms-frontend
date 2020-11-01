@@ -4,6 +4,9 @@
 	<!-- Local CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/newstyles.css">
+
+    <!-- javascript for modal -->
+    <script defer src="js/script.js"></script>
 </head>
 
 <body>
@@ -46,13 +49,41 @@
                                 }
                                 //add $mysqli->close(); to close database connection later
                             ?>
+                            <button data-modal-target="#modal1" class="modal-button">View details</button>
+                            <div class="modal" id="modal1">
+                                <div class="modal-header">
+                                    <div class="title">A1 Printer Details</div>
+                                    <center><button data-close-button class="close-button">&times;</button></center>
+                                </div>
+                                <div class="modal-body">
+                                    <?php
+                                        
+                                        //search database for the printer and info
+                                        $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 01'";
+                                        $result = $mysqli->query($sql);
+                                        
+                                        if ($result->num_rows > 0) {
+                                            //output data of each row
+                                            while($row = $result->fetch_assoc()) {
+                                                echo "<div> <h4>Status: </h4>" . $row["Printer_status"]. "</div> <div> <h4>User: </h4>" . $row["Printer_user"]. "</div> <div> <h4>Last used for: </h4>" . $row["Printer_usetemp"]. "</div>";
+                                            }
+                                        } else {
+                                            echo "0 results";
+                                        }
+                                        //add $mysqli->close(); to close database connection later
+                                    ?>
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
                         </li>
                         <li>
                             <h1>A2</h1>
                             <?php
-                            
+
+                                include "db_connect.php"; //
+
                                 //search database for the printer and info
-                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 01'";
+                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 02'";
                                 $result = $mysqli->query($sql);
                                 
                                 if ($result->num_rows > 0) {
@@ -65,6 +96,32 @@
                                 }
                                 //add $mysqli->close(); to close database connection later
                             ?>
+                            <button data-modal-target="#modal2" class="modal-button">View details</button>
+                            <div class="modal" id="modal2">
+                                <div class="modal-header">
+                                    <div class="title">A2 Printer Details</div>
+                                    <center><button data-close-button class="close-button">&times;</button></center>
+                                </div>
+                                <div class="modal-body">
+                                    <?php
+                                        
+                                        //search database for the printer and info
+                                        $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 02'";
+                                        $result = $mysqli->query($sql);
+                                        
+                                        if ($result->num_rows > 0) {
+                                            //output data of each row
+                                            while($row = $result->fetch_assoc()) {
+                                                echo "<div> <h4>Status: </h4>" . $row["Printer_status"]. "</div> <div> <h4>User: </h4>" . $row["Printer_user"]. "</div> <div> <h4>Last used for: </h4>" . $row["Printer_usetemp"]. "</div>";
+                                            }
+                                        } else {
+                                            echo "0 results";
+                                        }
+                                        //add $mysqli->close(); to close database connection later
+                                    ?>
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
                         </li>
                         <li>
                             <h1>A3</h1>
