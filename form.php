@@ -43,7 +43,7 @@
             <div class="form-group">
                 <label class="col-md-4 control-label" for="selectedprinter">Which printer are you updating the status of?</label>  
                 <div class="col-md-6">
-                    <input id="selectedprinter" name="selectedprinter" type="text" placeholder="e.g. Printer 01, Printer 23" class="form-control input-md">
+                    <input id="selectedprinter" name="selectedprinter" type="text" placeholder="e.g. A1, D2" class="form-control input-md">
                     <span class="help-block">Enter the printer name as shown in the grid</span>  
                 </div>
             </div>
@@ -52,7 +52,7 @@
             <div class="form-group">
                 <label class="col-md-4 control-label" for="newstatus">What is the new status for this printer?</label>  
                 <div class="col-md-6">
-                    <input id="newstatus" name="newstatus" type="text" placeholder="e.g. Ready, Usable, Unusable, Busy" class="form-control input-md">
+                    <input id="newstatus" name="newstatus" type="text" placeholder="e.g. Open, Reserved, Down, Inventory" class="form-control input-md">
                     <span class="help-block">Enter the new status here.</span>  
                 </div>
             </div>
@@ -70,7 +70,7 @@
             <div class="form-group">
                 <label class="col-md-4 control-label" for="usetemp">What temperature was this printer used at last?</label>  
                 <div class="col-md-5">
-                    <input id="usetemp" name="usetemp" type="text" placeholder="e.g. High Temperature, Low Temperature" class="form-control input-md">
+                    <input id="usetemp" name="usetemp" type="text" placeholder="e.g. High Temperature, Low Temperature, n/a" class="form-control input-md">
                     <span class="help-block">If you are done with this printer, what temperature did you last use it for. If reserving, what temperature do you intend to use it for?</span>  
                 </div>
             </div>

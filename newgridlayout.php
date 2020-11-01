@@ -30,19 +30,19 @@
                 <li>
                     <ul class="cellflex">
                         <li>
-                            <h1>A1</h1>
+                            <h1>A1</h1> <!-- Specify each printer spot -->
                             <?php
 
-                                include "db_connect.php"; //
+                                include "db_connect.php"; //connect to data base
 
                                 //search database for the printer and info
-                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 01'";
+                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'A1'"; //Specify printer id for each spot
                                 $result = $mysqli->query($sql);
                                 
                                 if ($result->num_rows > 0) {
                                     //output data of each row
                                     while($row = $result->fetch_assoc()) {
-                                        echo "<div> <h4>Status: </h4>" . $row["Printer_status"]. "</div> <div> <h4>User: </h4>" . $row["Printer_user"]. "</div> <div> <h4>Last used for: </h4>" . $row["Printer_usetemp"]. "</div>";
+                                        echo "<div> <h4>Status: </h4>" . $row["Printer_status"]. "</div> <br>";
                                     }
                                 } else {
                                     echo "0 results";
@@ -50,22 +50,22 @@
                                 //add $mysqli->close(); to close database connection later
                             ?>
                             <button data-modal-target="#modal1" class="modal-button">View details</button>
-                            <div class="modal" id="modal1">
+                            <div class="modal" id="modal1"> <!-- Specify modal for each printer spot -->
                                 <div class="modal-header">
-                                    <div class="title">A1 Printer Details</div>
+                                    <div class="title">A1 Printer Details</div> <!-- Specify which printers details -->
                                     <center><button data-close-button class="close-button">&times;</button></center>
                                 </div>
                                 <div class="modal-body">
                                     <?php
                                         
                                         //search database for the printer and info
-                                        $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 01'";
+                                        $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'A1'"; //Specify printer id for each spot
                                         $result = $mysqli->query($sql);
                                         
                                         if ($result->num_rows > 0) {
                                             //output data of each row
                                             while($row = $result->fetch_assoc()) {
-                                                echo "<div> <h4>Status: </h4>" . $row["Printer_status"]. "</div> <div> <h4>User: </h4>" . $row["Printer_user"]. "</div> <div> <h4>Last used for: </h4>" . $row["Printer_usetemp"]. "</div>";
+                                                echo "<div> <h4>User: </h4>" . $row["Printer_user"]. "</div> <div> <h4>Last used for: </h4>" . $row["Printer_usetemp"]. "</div> <div> <h4>ECN: </h4>" . $row["Printer_user"]. "</div>" ;
                                             }
                                         } else {
                                             echo "0 results";
@@ -77,47 +77,39 @@
                             <div id="overlay"></div>
                         </li>
                         <li>
-                            <h1>A2</h1>
+                            <h1>A2</h1> <!-- Specify each printer spot -->
                             <?php
 
-                                include "db_connect.php"; //
-
-                                //search database for the printer and info
-                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 02'";
+                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'A2'"; //Specify printer id for each spot
                                 $result = $mysqli->query($sql);
                                 
                                 if ($result->num_rows > 0) {
-                                    //output data of each row
                                     while($row = $result->fetch_assoc()) {
-                                        echo "<div> <h4>Status: </h4>" . $row["Printer_status"]. "</div> <div> <h4>User: </h4>" . $row["Printer_user"]. "</div> <div> <h4>Last used for: </h4>" . $row["Printer_usetemp"]. "</div>";
+                                        echo "<div> <h4>Status: </h4>" . $row["Printer_status"]. "</div> <br>";
                                     }
                                 } else {
                                     echo "0 results";
-                                }
-                                //add $mysqli->close(); to close database connection later
+                                } 
                             ?>
                             <button data-modal-target="#modal2" class="modal-button">View details</button>
-                            <div class="modal" id="modal2">
+                            <div class="modal" id="modal2"> <!-- Specify modal for each printer spot -->
                                 <div class="modal-header">
-                                    <div class="title">A2 Printer Details</div>
+                                    <div class="title">A2 Printer Details</div> <!-- Specify which printers details -->
                                     <center><button data-close-button class="close-button">&times;</button></center>
                                 </div>
                                 <div class="modal-body">
                                     <?php
                                         
-                                        //search database for the printer and info
-                                        $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'Printer 02'";
+                                        $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'A2'"; //Specify printer id for each spot
                                         $result = $mysqli->query($sql);
                                         
                                         if ($result->num_rows > 0) {
-                                            //output data of each row
                                             while($row = $result->fetch_assoc()) {
-                                                echo "<div> <h4>Status: </h4>" . $row["Printer_status"]. "</div> <div> <h4>User: </h4>" . $row["Printer_user"]. "</div> <div> <h4>Last used for: </h4>" . $row["Printer_usetemp"]. "</div>";
+                                                echo "<div> <h4>User: </h4>" . $row["Printer_user"]. "</div> <div> <h4>Last used for: </h4>" . $row["Printer_usetemp"]. "</div> <div> <h4>ECN: </h4>" . $row["Printer_user"]. "</div>" ;
                                             }
                                         } else {
                                             echo "0 results";
                                         }
-                                        //add $mysqli->close(); to close database connection later
                                     ?>
                                 </div>
                             </div>
