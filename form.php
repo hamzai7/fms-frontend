@@ -56,8 +56,17 @@
             <div class="form-group">
                 <label class="col-md-4 control-label" for="newstatus">What is the new status for this printer?</label>  
                 <div class="col-md-6">
-                    <input id="newstatus" name="newstatus" type="text" placeholder="e.g. Open, Reserved, Down, Inventory" class="form-control input-md">
-                    <span class="help-block">Enter the new status here.</span>  
+                <select id="ddselect" onchange="ddlselect();">
+                            <option> -- Select -- </option>
+                            <option>Ready</option>
+                            <option>Build-out</option>
+                            <option>Down</option>
+                            <option>Sold</option>
+                            <option>Inventory</option>
+                            </select>
+                            <input type="text" id="newstatus" name="newstatus"/>
+                <!--input id="newstatus" name="newstatus" type="text" placeholder="e.g. Ready, Usable, Unusable, Busy" class="form-control input-md">-->
+                <span class="help-block">Enter the new status here.</span>  
                 </div>
             </div>
 
@@ -74,8 +83,15 @@
             <div class="form-group">
                 <label class="col-md-4 control-label" for="usetemp">What temperature was this printer used at last?</label>  
                 <div class="col-md-5">
-                    <input id="usetemp" name="usetemp" type="text" placeholder="e.g. High Temperature, Low Temperature, n/a" class="form-control input-md">
-                    <span class="help-block">If you are done with this printer, what temperature did you last use it for. If reserving, what temperature do you intend to use it for?</span>  
+                <select id="ddselect1" onchange="ddlselect1();">
+                            <option> -- Select -- </option>
+                            <option>High Temperature</option>
+                            <option>Low Temperature</option>
+                            <option>Testing</option>
+                            </select>
+                            <input type="text" id="usetemp" name="usetemp"/>
+                <!--input id="usetemp" name="usetemp" type="text" placeholder="e.g. High Temperature, Low Temperature" class="form-control input-md"-->
+                <span class="help-block">If you are done with this printer, what temperature did you last use it for. If reserving, what temperature do you intend to use it for?</span>  
                 </div>
             </div>
 
@@ -93,6 +109,25 @@
     <!-- Links to other pages -->
     <a href="gridlayout.php">Go to grid page</a><br>
 
+
+    <script>
+    function ddlselect()
+    {
+      let d = document.getElementById("ddselect");
+      let displaytext = d.options[d.selectedIndex].text;
+      document.getElementById("newstatus").value=displaytext;
+    }
+  </script>
+
+<!-- Script for the temperature -->
+<script>
+    function ddlselect1()
+    {
+      let d = document.getElementById("ddselect1");
+      let displaytext = d.options[d.selectedIndex].text;
+      document.getElementById("usetemp").value=displaytext;
+    }
+  </script>
 </body>
 
 </html>
