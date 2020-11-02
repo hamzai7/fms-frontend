@@ -65,7 +65,7 @@
                                         if ($result->num_rows > 0) {
                                             //output data of each row
                                             while($row = $result->fetch_assoc()) {
-                                                echo "<div> <h4>User: </h4>" . $row["Printer_user"]. "</div> <div> <h4>Last used for: </h4>" . $row["Printer_usetemp"]. "</div> <div> <h4>ECN: </h4>" . $row["Printer_user"]. "</div>" ;
+                                                echo "<div> <h4>User: </h4>" . $row["Printer_user"]. "</div> <div> <h4>Last used for: </h4>" . $row["Printer_usetemp"]. "</div> <div> <h4>ECN: </h4>" . $row["Printer_ecn"]. "</div>" ;
                                             }
                                         } else {
                                             echo "0 results";
