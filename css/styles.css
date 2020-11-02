@@ -113,6 +113,32 @@ nav li {
     width: 200px;
 }
 
+
+.bay {
+    background: white;
+    color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.bay figure {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+.bay figure img {
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: grey 0px 0px 10px;
+    height: 200px;
+    width: 200px;
+}
+
 /* Responsive Rules 
 
     @media screen and (max-width: 715px) {

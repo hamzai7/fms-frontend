@@ -25,7 +25,25 @@
                 <li class= "desktop"><a href="newform.php">New Form</a></li> <!-- v2.0 -->
             </ul>
         </nav>
-	</header>
+    </header>
+    
+
+    <section class="bay">
+        <figure>
+            <img src="images/printerbay.jpg" alt="Printer bay diagram">
+            <figcaption>The Printer Bay</figcaption>
+        </figure>
+        <figure>
+            <img src="https://www.essentium.com/wp-content/uploads/2019/09/Essentium-Materials.jpg" alt="Spools of filament">
+            <figcaption>Essentium materials</figcaption>
+        </figure>
+        <figure>
+            <img src="https://www.essentium.com/wp-content/uploads/2019/10/HES-flashfuse.jpg" alt="FlashSude-Enabled HSE">
+            <figcaption>FlashFuse Technology</figcaption>
+        </figure>
+        
+       
+    </section>
 
 
     <ul class='bigflex'> <!-- upper sections -->
