@@ -46,7 +46,7 @@
                                 if ($result->num_rows > 0) {
                                     //output data of each row
                                     while($row = $result->fetch_assoc()) {
-                                        echo "<div> <h4>Status: </h4>" . $row["Printer_status"]. "</div> <br>";
+                                        echo "<div> <h4>Status: </h4><p style='color:blue'>" . $row["Printer_status"]. "</p></div> <br>";
                                     }
                                 } else {
                                     echo "0 results";
