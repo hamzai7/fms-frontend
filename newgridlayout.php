@@ -40,7 +40,7 @@
                                 include "db_connect.php"; //connect to data base
 
                                 //search database for the printer and info
-                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'A1'"; //Specify printer id for each spot
+                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'A1'"; //Specify printer id for each spot and columns to pull
                                 $result = $mysqli->query($sql);
                                 
                                 if ($result->num_rows > 0) {
@@ -63,7 +63,7 @@
                                     <?php
                                         
                                         //search database for the printer and info
-                                        $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'A1'"; //Specify printer id for each spot
+                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn FROM printers_table WHERE PrinterID LIKE 'A1'"; //Specify printer id for each spot and columns to pull
                                         $result = $mysqli->query($sql);
                                         
                                         if ($result->num_rows > 0) {
