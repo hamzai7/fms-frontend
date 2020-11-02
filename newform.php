@@ -40,7 +40,7 @@
             <div class="form-group">
                 
                 <label class="col-md-4 control-label" for="selectedprinter"><strong>Which printer are you updating the status of?</strong>  
-                    <input id="selectedprinter" name="selectedprinter" type="text" placeholder="e.g. A1, D2" class=""> 
+                    <input id="selectedprinter" name="selectedprinter" type="text" placeholder="e.g. A1, D2" required> 
                 </label>
                 
             </div>
@@ -82,7 +82,7 @@
             <div class="form-group">
             
                 <label class="col-md-4 control-label" for="newuser"><strong>Who is now using this printer?</strong> 
-                    <input id="newuser" name="newuser" type="text" placeholder="'none' if not reserving" class="">
+                    <input id="newuser" name="newuser" type="text" placeholder="'none' if not reserving" required>
                 </label>
             
             </div>
@@ -91,7 +91,7 @@
             <br>
             <br>
 
-            <!-- Text input for new user-->
+            <!-- Radio input for use temperature-->
             <div class="form-group">
             
                 <strong>What temperature was this printer used at last?</strong>
