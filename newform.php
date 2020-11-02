@@ -19,7 +19,7 @@
     <header>
         <nav>
             <ul>
-                <li class= "desktop"><a href="newgridlayout.php">New Grid</a></li> <!-- v2.0 -->
+            <li class= "desktop"><a href="newgridlayout.php">New Grid</a></li> <!-- v2.0 -->
                 <li class= "desktop"><a href="gridlayout.php">Grid</a></li>
 				<li class="logo"><a href="../index.html">Essentium Logo</a></li>
                 <li class= "mobile"><a href="newgridlayout.php"><h3>New Grid</h3></a></li> <!-- v2.0 -->
@@ -52,14 +52,32 @@
                 </div>
             </div>
 
-            <!-- Text input for new status-->
+            <br>
+
+            <!-- Radio input for new status-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="newstatus">What is the new status for this printer?</label>  
-                <div class="col-md-6">
-                    <input id="newstatus" name="newstatus" type="text" placeholder="e.g. Open, Reserved, Down, Inventory" class="form-control input-md">
-                    <span class="help-block">Enter the new status here.</span>  
-                </div>
+            <center>
+                <strong>What is the new status for this printer?</strong>
+                <label class="" for="open"> 
+                    <input id="open" name="newstatus" type="radio" value="Open" checked>
+                    Open
+                </label>
+                <label class="" for="reserved"> 
+                    <input id="reserved" name="newstatus" type="radio" value="Reserved">
+                    Reserved
+                </label>
+                <label class="" for="down"> 
+                    <input id="down" name="newstatus" type="radio" value="Down">
+                    Down
+                </label>
+                <label class="" for="inventory"> 
+                    <input id="inventory" name="newstatus" type="radio" value="Inventory">
+                    Inventory
+                </label>
+            </center>
             </div>
+
+            <br>
 
             <!-- Text input for new user-->
             <div class="form-group">

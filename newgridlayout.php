@@ -14,11 +14,15 @@
 	<header>
         <nav>
             <ul>
+                <li class= "desktop"><a href="newgridlayout.php">New Grid</a></li> <!-- v2.0 -->
                 <li class= "desktop"><a href="gridlayout.php">Grid</a></li>
 				<li class="logo"><a href="../index.html">Essentium Logo</a></li>
+                <li class= "mobile"><a href="newgridlayout.php"><h3>New Grid</h3></a></li> <!-- v2.0 -->
 				<li class= "mobile"><a href="gridlayout.php"><h3>Grid</h3></a></li>
 				<li class= "mobile"><a href="form.php"><h3>Form</h3></a></li>
+                <li class= "mobile"><a href="newform.php"><h3>New Form</h3></a></li> <!-- v2.0 -->
 				<li class= "desktop"><a href="form.php">Form</a></li>
+                <li class= "desktop"><a href="newform.php">New Form</a></li> <!-- v2.0 -->
             </ul>
         </nav>
 	</header>
