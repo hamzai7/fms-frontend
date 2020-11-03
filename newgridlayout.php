@@ -6,26 +6,25 @@
     <link rel="stylesheet" href="css/newstyles.css">
 
     <!-- javascript for modal -->
-    <script defer src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body>
 
-	<header>
-        <nav>
-            <ul>
-                <li class= "desktop"><a href="newgridlayout.php">New Grid</a></li> <!-- v2.0 -->
-                <li class= "desktop"><a href="gridlayout.php">Grid</a></li>
-				<li class="logo"><a href="../index.html">Essentium Logo</a></li>
-                <li class= "mobile"><a href="newgridlayout.php"><h3>New Grid</h3></a></li> <!-- v2.0 -->
-				<li class= "mobile"><a href="gridlayout.php"><h3>Grid</h3></a></li>
-				<li class= "mobile"><a href="form.php"><h3>Form</h3></a></li>
-                <li class= "mobile"><a href="newform.php"><h3>New Form</h3></a></li> <!-- v2.0 -->
-				<li class= "desktop"><a href="form.php">Form</a></li>
-                <li class= "desktop"><a href="newform.php">New Form</a></li> <!-- v2.0 -->
-            </ul>
-        </nav>
-    </header>
+	
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars">[][][]</i>
+        </span>
+        <a class="logo" href="../index.html">Essentium Logo</a>
+        <ul class="main-nav" id="js-menu">
+            <li><a class= "nav-links" href="gridlayout.php">Grid</a></li>
+            <li><a class= "nav-links" href="form.php">Form</a></li>
+            <li><a class= "nav-links" href="newgridlayout.php">New Grid</a></li> <!-- v2.0 -->
+            <li><a class= "nav-links" href="newform.php">New Form</a></li> <!-- v2.0 -->
+        </ul>
+    </nav>
+    
     
 
     <section class="bay">
