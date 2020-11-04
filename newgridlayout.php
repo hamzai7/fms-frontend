@@ -25,14 +25,14 @@
         </span>
         <a class="logo" href="../index.html">Essentium Logo</a>
         <ul class="main-nav" id="jsMenu">
-            <li><a class= "nav-links" href="gridlayout.php">Grid</a></li>
-            <li><a class= "nav-links" href="form.php">Form</a></li>
-            <li><a class= "nav-links" href="newgridlayout.php">New Grid</a></li> <!-- v2.0 -->
-            <li><a class= "nav-links" href="newform.php">New Form</a></li> <!-- v2.0 -->
+            <li><a class= "nav-links" href="gridlayout.php">Old Grid</a></li>
+            <li><a class= "nav-links" href="form.php">Old Form</a></li>
+            <li><a class= "nav-links" href="newgridlayout.php">Grid</a></li> <!-- v2.0 -->
+            <li><a class= "nav-links" href="newform.php">Form</a></li> <!-- v2.0 -->
         </ul>
     </nav>
     
-    <h1 class='formTitle'><strong>New Grid Page</strong></h1>
+    <h1 class='formTitle'><strong>Grid Page</strong></h1>
     <hr>
 
     <section class="bay">
