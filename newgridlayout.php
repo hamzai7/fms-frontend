@@ -15,9 +15,9 @@
 
 	
     <nav class="navbar">
-        <button class="navbar-toggle" id="jsToggle">
-            Show Menu
-        </button>
+        <span class="navbar-toggle">
+            <button id="jsToggle">Show Menu</button>
+        </span>
         <a class="logo" href="../index.html">Essentium Logo</a>
         <ul class="main-nav" id="jsMenu">
             <li><a class= "nav-links" href="gridlayout.php">Grid</a></li>

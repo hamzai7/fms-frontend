@@ -4,16 +4,18 @@
 
     <!-- Local CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- javascript for navbar -->
+    <script defer src="js/nav.js"></script>
 </head>
 
 <body>
 
     <nav class="navbar">
-        <span class="navbar-toggle" id="js-navbar-toggle">
-            <i class="fas fa-bars">[][][]</i>
+        <span class="navbar-toggle">
+            <button id="jsToggle">Show Menu</button>
         </span>
         <a class="logo" href="../index.html">Essentium Logo</a>
-        <ul class="main-nav" id="js-menu">
+        <ul class="main-nav" id="jsMenu">
             <li><a class= "nav-links" href="gridlayout.php">Grid</a></li>
             <li><a class= "nav-links" href="form.php">Form</a></li>
             <li><a class= "nav-links" href="newgridlayout.php">New Grid</a></li> <!-- v2.0 -->
