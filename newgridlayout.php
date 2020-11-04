@@ -8,7 +8,7 @@
     <!-- javascript for modal -->
     <script defer src="js/script.js"></script>
     <!-- javascript for navbar -->
-    <script defer src="nav/script.js"></script>
+    <script defer src="js/nav.js"></script>
 </head>
 
 <body>

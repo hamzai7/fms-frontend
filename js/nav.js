@@ -7,7 +7,7 @@ button.addEventListener("click", () => {
   console.log('clicked!')
   showMenu = !showMenu
   if (showMenu === true) {
-    menu.style.display = "inline-block"
+    menu.style.display = "block"
   } else {
     menu.style.display = "none"
   }
