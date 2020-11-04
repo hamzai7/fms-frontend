@@ -51,7 +51,7 @@
 
 
     //update status
-    $sql = "UPDATE Printers_table SET Printer_status='$new_status' WHERE PrinterID LIKE '$selected_printer'";
+    $sql = "UPDATE printers_table SET Printer_status='$new_status' WHERE PrinterID LIKE '$selected_printer'";
 
     if ($mysqli->query($sql) === TRUE) {
       echo "Status for the printer in spot $selected_printer updated successfully!<br>";
@@ -61,7 +61,7 @@
 
 
     //update user
-    $sql = "UPDATE Printers_table SET Printer_user='$new_user' WHERE PrinterID LIKE '$selected_printer'";
+    $sql = "UPDATE printers_table SET Printer_user='$new_user' WHERE PrinterID LIKE '$selected_printer'";
 
     if ($mysqli->query($sql) === TRUE) {
       echo "<br>User for the printer in spot $selected_printer updated successfully!<br>";
@@ -71,7 +71,7 @@
 
 
     //update temp
-    $sql = "UPDATE Printers_table SET Printer_usetemp='$use_temp' WHERE PrinterID LIKE '$selected_printer'";
+    $sql = "UPDATE printers_table SET Printer_usetemp='$use_temp' WHERE PrinterID LIKE '$selected_printer'";
 
     if ($mysqli->query($sql) === TRUE) {
       echo "<br>Use temperature for the printer in spot $selected_printer updated successfully!<br>";
