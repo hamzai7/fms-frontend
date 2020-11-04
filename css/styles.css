@@ -104,6 +104,10 @@ nav li {
 
 .main-nav {
     list-style-type: none;
+    
+}
+
+#jsMenu {
     display: none;
 }
 

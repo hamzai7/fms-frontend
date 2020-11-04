@@ -36,14 +36,3 @@ function closeModal(modal) {
     modal.classList.remove('active')
     overlay.classList.remove('active')
 }
-//modal end
-
-//navbar start
-
-let mainNav = document.getElementById('js-menu');
-let navBarToggle = document.getElementById('js-navbar-toggle');
-
-navBarToggle.addEventListener('click', function () {
-    
-    mainNav.classList.toggle('menu-active');
-});
