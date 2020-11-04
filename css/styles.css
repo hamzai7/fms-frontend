@@ -335,3 +335,14 @@ footer {
     opacity: 1;
     pointer-events: all;
 }
+
+/* Form styles*/
+
+.formTitle {
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    text-align: center;
+}

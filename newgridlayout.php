@@ -32,7 +32,8 @@
         </ul>
     </nav>
     
-    
+    <h1 class='formTitle'><strong>New Grid Page</strong></h1>
+    <hr>
 
     <section class="bay">
         <figure>

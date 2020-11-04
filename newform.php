@@ -27,7 +27,7 @@
         </ul>
     </nav>
 
-    <h1>Form Page</h1>
+    <h1 class='formTitle'>New Form Page</h1>
 
     <!-- Printer Reset Form -->
     <hr>
