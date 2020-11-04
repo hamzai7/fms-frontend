@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Grid Page</title>
+    <title>New Form Page</title>
 
     <!-- Local CSS -->
     <link rel="stylesheet" href="css/styles.css">
