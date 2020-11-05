@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Update Confirmation Page</title>
+  <title>Advanced Confirmation Page</title>
 
   <!-- Local CSS -->
   <link rel="stylesheet" href="css/styles.css">
@@ -41,43 +41,34 @@
 
     //take input from form and convert to variables
     $selected_printer = $_GET["selectedprinter"];
-    $new_status = $_GET["newstatus"];
-    $new_user = $_GET["newuser"];
-    $use_temp = $_GET["usetemp"];
+    
+    $newECN = $_GET["newECN"];
+    $newSN = $_GET["newSN"];
 
     $selected_printer = addslashes($selected_printer);
-    $new_status = addslashes($new_status);
-    $new_user = addslashes($new_user);
-    $use_temp = addslashes($use_temp);
+    
+    $newECN = addslashes($newECN);
+    $newSN = addslashes($newSN);
 
 
-    //update status
-    $sql = "UPDATE printers_table SET Printer_status='$new_status' WHERE PrinterID LIKE '$selected_printer'";
+
+    //update ECN
+    $sql = "UPDATE printers_table SET Printer_ecn='$newECN' WHERE PrinterID LIKE '$selected_printer'";
 
     if ($mysqli->query($sql) === TRUE) {
-      echo "Status for the printer in spot $selected_printer updated successfully!<br>";
+      echo "<br>ECN for the printer in spot $selected_printer updated successfully!<br>";
     } else {
-      echo "Error updating printer status: " . $mysqli->error;
+      echo "Error updating ECN: " . $mysqli->error;
     }
 
 
-    //update user
-    $sql = "UPDATE printers_table SET Printer_user='$new_user' WHERE PrinterID LIKE '$selected_printer'";
+    //update serial number
+    $sql = "UPDATE printers_table SET Printer_serial='$newSN' WHERE PrinterID LIKE '$selected_printer'";
 
     if ($mysqli->query($sql) === TRUE) {
-      echo "<br>User for the printer in spot $selected_printer updated successfully!<br>";
+      echo "<br>Serial number for the printer in spot $selected_printer updated successfully!<br>";
     } else {
-      echo "Error updating user: " . $mysqli->error;
-    }
-
-
-    //update temp
-    $sql = "UPDATE printers_table SET Printer_usetemp='$use_temp' WHERE PrinterID LIKE '$selected_printer'";
-
-    if ($mysqli->query($sql) === TRUE) {
-      echo "<br>Use temperature for the printer in spot $selected_printer updated successfully!<br>";
-    } else {
-      echo "Error updating use temperature: " . $mysqli->error;
+      echo "Error updating serial number: " . $mysqli->error;
     }
 
 

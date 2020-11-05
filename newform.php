@@ -20,10 +20,9 @@
         </span>
         <a class="logo" href="../index.html">Essentium Logo</a>
         <ul class="main-nav" id="jsMenu">
-            <li><a class= "nav-links" href="gridlayout.php">Old Grid</a></li>
-            <li><a class= "nav-links" href="form.php">Old Form</a></li>
-            <li><a class= "nav-links" href="newgridlayout.php">Grid</a></li> <!-- v2.0 -->
-            <li><a class= "nav-links" href="newform.php">Form</a></li> <!-- v2.0 -->
+            <li><a class= "nav-links" href="newgridlayout.php">Grid</a></li>
+            <li><a class= "nav-links" href="newform.php">Form</a></li>
+            <li><a class= "nav-links" href="form.php">Technical Form</a></li>
         </ul>
     </nav>
 
