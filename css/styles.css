@@ -201,15 +201,16 @@ nav li {
     padding: 10px;
     text-align: center;
     text-transform: uppercase;
-    width: 200px;
+    width: 80vw;
+    height: 80vh;
 }
 
 .features figure img {
     border: 1px solid white;
     border-radius: 50%;
     box-shadow: grey 0px 0px 10px;
-    height: 200px;
-    width: 200px;
+    height: 99%;
+    width: 99%;
 }
 
 
