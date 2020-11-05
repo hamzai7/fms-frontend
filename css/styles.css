@@ -147,10 +147,6 @@ nav li {
     font-size: 24px;
 }
 
-.menu-active {
-    display: block;
-  }
-
 @media screen and (min-width: 768px) {
     .navbar {
         display: flex;
