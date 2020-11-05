@@ -198,7 +198,7 @@ nav li {
 
 .features figure {
     margin: auto;
-    padding: 10px;
+    padding: 30px;
     text-align: center;
     text-transform: uppercase;
     width: 80vw;
@@ -207,11 +207,42 @@ nav li {
 
 .features figure img {
     border: 1px solid white;
-    border-radius: 50%;
+    border-radius: 10%;
     box-shadow: grey 0px 0px 10px;
     height: 99%;
     width: 99%;
 }
+
+/* tall features */
+
+.features .tall {
+    width: 90vw;
+    height: 85vh;
+}
+
+/* wide features */
+
+.features .wide {
+    width: 95vw;
+    height: 40vh;
+}
+
+/* desktop view feature resize */
+
+@media screen and (min-width: 768px) {
+    .features .tall {
+        width: 40vw;
+        height: 95vh;
+    }
+    
+    /* wide features */
+    
+    .features .wide {
+        width: 60vw;
+        height: 60vh;
+    }
+}
+
 
 
 /* printer bay diagram */
@@ -230,8 +261,8 @@ nav li {
     padding: 10px;
     text-align: center;
     text-transform: uppercase;
-    width: 80vw;
-    height: 80vh;
+    width: 90vw;
+    height: 40vh;
 }
 
 .bay figure img {
@@ -240,6 +271,13 @@ nav li {
     box-shadow: grey 0px 0px 10px;
     height: 99%;
     width: 99%;
+}
+
+@media screen and (min-width: 768px) {
+    .bay figure {
+        width: 80vw;
+        height: 80vh;
+    }
 }
 
 /* Responsive Rules 
