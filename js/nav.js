@@ -1,5 +1,5 @@
 //navbar start
-let menu = document.querySelector("#jsMenu")
+let menu = document.querySelector(".main-nav")
 let button = document.querySelector("#jsToggle")
 
 button.addEventListener("click", () => {
