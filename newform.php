@@ -41,7 +41,7 @@
             <!-- Text input for selected printer-->
             <div class="form-group">
                 
-                <label class="col-md-4 control-label" for="selectedprinter"><strong>Which printer are you updating the status of?</strong>  
+                <label class="col-md-4 control-label" for="selectedprinter"><strong>Which grid position are you updating the status of?</strong>  
                     <input id="selectedprinter" name="selectedprinter" type="text" placeholder="e.g. A1, D2" required> 
                 </label>
                 
