@@ -46,7 +46,7 @@
 
     <ul class='bigflex'> <!-- upper sections -->
         <li>
-            <ul class="smallflex"> <!-- section a -->
+            <ul class="smallflex"> <!-- section A, B, C (1-3) -->
                 <li>
                     <ul class="cellflex">
                         <li>
@@ -192,282 +192,6 @@
                 <li>
                     <ul class="cellflex">
                         <li>
-                            <h1>A4</h1>
-                            <?php
-                                //search database for the printer and info
-                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'A4'"; //Specify printer id for each spot and columns to pull
-                                $result = $mysqli->query($sql);
-                                
-                                if ($result->num_rows > 0) {
-                                    //output data of each row
-                                    while($row = $result->fetch_assoc()) {
-                                        echo "<div><br><h4 style='font-size:20px'>Status: </h4><p style='color:blue'><br>" . $row["Printer_status"]. "</p></div> <br>";
-                                    }
-                                } else {
-                                    echo "<br>0 results<br>";
-                                }
-                            ?>
-                            <button data-modal-target="#modalA4" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
-                            <div class="modal" id="modalA4"> <!-- Specify modal for each printer spot -->
-                                <div class="modal-header">
-                                    <div class="title">A4 Printer Details</div> <!-- Specify which printers details -->
-                                    <center><button data-close-button class="close-button">&times;</button></center>
-                                </div>
-                                <div class="modal-body">
-                                    <?php
-                                        //search database for the printer and info
-                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'A4'"; //Specify printer id for each spot and columns to pull
-                                        $result = $mysqli->query($sql);
-                                        
-                                        if ($result->num_rows > 0) {
-                                            //output data of each row
-                                            while($row = $result->fetch_assoc()) {
-                                                echo "<h4 style='font-size:20px'>User: </h4><p style='color:blue'>" . $row["Printer_user"]. 
-                                                "</p><h4 style='font-size:20px'><br>Last used for: </h4><p style='color:blue'>" . $row["Printer_usetemp"]. 
-                                                "</p><h4 style='font-size:20px'><br>ECN: </h4><p style='color:blue'>" . $row["Printer_ecn"] . 
-                                                "</p><h4 style='font-size:20px'><br>Serial number: </h4><p style='color:blue'>" . $row["Printer_serial"] . "</p>";
-                                            }
-                                        } else {
-                                            echo "0 results";
-                                        }
-                                    ?>
-                                </div>
-                            </div>
-                            <div id="overlay"></div>
-                        </li>
-                        <li>
-                            <h1>A5</h1>
-                            <?php
-                                //search database for the printer and info
-                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'A5'"; //Specify printer id for each spot and columns to pull
-                                $result = $mysqli->query($sql);
-                                
-                                if ($result->num_rows > 0) {
-                                    //output data of each row
-                                    while($row = $result->fetch_assoc()) {
-                                        echo "<div><br><h4 style='font-size:20px'>Status: </h4><p style='color:blue'><br>" . $row["Printer_status"]. "</p></div> <br>";
-                                    }
-                                } else {
-                                    echo "<br>0 results<br>";
-                                }
-                            ?>
-                            <button data-modal-target="#modalA5" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
-                            <div class="modal" id="modalA5"> <!-- Specify modal for each printer spot -->
-                                <div class="modal-header">
-                                    <div class="title">A5 Printer Details</div> <!-- Specify which printers details -->
-                                    <center><button data-close-button class="close-button">&times;</button></center>
-                                </div>
-                                <div class="modal-body">
-                                    <?php
-                                        //search database for the printer and info
-                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'A5'"; //Specify printer id for each spot and columns to pull
-                                        $result = $mysqli->query($sql);
-                                        
-                                        if ($result->num_rows > 0) {
-                                            //output data of each row
-                                            while($row = $result->fetch_assoc()) {
-                                                echo "<h4 style='font-size:20px'>User: </h4><p style='color:blue'>" . $row["Printer_user"]. 
-                                                "</p><h4 style='font-size:20px'><br>Last used for: </h4><p style='color:blue'>" . $row["Printer_usetemp"]. 
-                                                "</p><h4 style='font-size:20px'><br>ECN: </h4><p style='color:blue'>" . $row["Printer_ecn"] . 
-                                                "</p><h4 style='font-size:20px'><br>Serial number: </h4><p style='color:blue'>" . $row["Printer_serial"] . "</p>";
-                                            }
-                                        } else {
-                                            echo "0 results";
-                                        }
-                                    ?>
-                                </div>
-                            </div>
-                            <div id="overlay"></div>
-                        </li>
-                        <li>
-                            <h1>A6</h1>
-                            <?php
-                                //search database for the printer and info
-                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'A6'"; //Specify printer id for each spot and columns to pull
-                                $result = $mysqli->query($sql);
-                                
-                                if ($result->num_rows > 0) {
-                                    //output data of each row
-                                    while($row = $result->fetch_assoc()) {
-                                        echo "<div><br><h4 style='font-size:20px'>Status: </h4><p style='color:blue'><br>" . $row["Printer_status"]. "</p></div> <br>";
-                                    }
-                                } else {
-                                    echo "<br>0 results<br>";
-                                }
-                            ?>
-                            <button data-modal-target="#modalA6" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
-                            <div class="modal" id="modalA6"> <!-- Specify modal for each printer spot -->
-                                <div class="modal-header">
-                                    <div class="title">A6 Printer Details</div> <!-- Specify which printers details -->
-                                    <center><button data-close-button class="close-button">&times;</button></center>
-                                </div>
-                                <div class="modal-body">
-                                    <?php
-                                        //search database for the printer and info
-                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'A6'"; //Specify printer id for each spot and columns to pull
-                                        $result = $mysqli->query($sql);
-                                        
-                                        if ($result->num_rows > 0) {
-                                            //output data of each row
-                                            while($row = $result->fetch_assoc()) {
-                                                echo "<h4 style='font-size:20px'>User: </h4><p style='color:blue'>" . $row["Printer_user"]. 
-                                                "</p><h4 style='font-size:20px'><br>Last used for: </h4><p style='color:blue'>" . $row["Printer_usetemp"]. 
-                                                "</p><h4 style='font-size:20px'><br>ECN: </h4><p style='color:blue'>" . $row["Printer_ecn"] . 
-                                                "</p><h4 style='font-size:20px'><br>Serial number: </h4><p style='color:blue'>" . $row["Printer_serial"] . "</p>";
-                                            }
-                                        } else {
-                                            echo "0 results";
-                                        }
-                                    ?>
-                                </div>
-                            </div>
-                            <div id="overlay"></div>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="cellflex">
-                        <li>
-                            <h1>A7</h1>
-                            <?php
-                                //search database for the printer and info
-                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'A7'"; //Specify printer id for each spot and columns to pull
-                                $result = $mysqli->query($sql);
-                                
-                                if ($result->num_rows > 0) {
-                                    //output data of each row
-                                    while($row = $result->fetch_assoc()) {
-                                        echo "<div><br><h4 style='font-size:20px'>Status: </h4><p style='color:blue'><br>" . $row["Printer_status"]. "</p></div> <br>";
-                                    }
-                                } else {
-                                    echo "<br>0 results<br>";
-                                }
-                            ?>
-                            <button data-modal-target="#modalA7" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
-                            <div class="modal" id="modalA7"> <!-- Specify modal for each printer spot -->
-                                <div class="modal-header">
-                                    <div class="title">A7 Printer Details</div> <!-- Specify which printers details -->
-                                    <center><button data-close-button class="close-button">&times;</button></center>
-                                </div>
-                                <div class="modal-body">
-                                    <?php
-                                        //search database for the printer and info
-                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'A7'"; //Specify printer id for each spot and columns to pull
-                                        $result = $mysqli->query($sql);
-                                        
-                                        if ($result->num_rows > 0) {
-                                            //output data of each row
-                                            while($row = $result->fetch_assoc()) {
-                                                echo "<h4 style='font-size:20px'>User: </h4><p style='color:blue'>" . $row["Printer_user"]. 
-                                                "</p><h4 style='font-size:20px'><br>Last used for: </h4><p style='color:blue'>" . $row["Printer_usetemp"]. 
-                                                "</p><h4 style='font-size:20px'><br>ECN: </h4><p style='color:blue'>" . $row["Printer_ecn"] . 
-                                                "</p><h4 style='font-size:20px'><br>Serial number: </h4><p style='color:blue'>" . $row["Printer_serial"] . "</p>";
-                                            }
-                                        } else {
-                                            echo "0 results";
-                                        }
-                                    ?>
-                                </div>
-                            </div>
-                            <div id="overlay"></div>
-                        </li>
-                        <li>
-                            <h1>A8</h1>
-                            <?php
-                                //search database for the printer and info
-                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'A8'"; //Specify printer id for each spot and columns to pull
-                                $result = $mysqli->query($sql);
-                                
-                                if ($result->num_rows > 0) {
-                                    //output data of each row
-                                    while($row = $result->fetch_assoc()) {
-                                        echo "<div><br><h4 style='font-size:20px'>Status: </h4><p style='color:blue'><br>" . $row["Printer_status"]. "</p></div> <br>";
-                                    }
-                                } else {
-                                    echo "<br>0 results<br>";
-                                }
-                            ?>
-                            <button data-modal-target="#modalA8" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
-                            <div class="modal" id="modalA8"> <!-- Specify modal for each printer spot -->
-                                <div class="modal-header">
-                                    <div class="title">A8 Printer Details</div> <!-- Specify which printers details -->
-                                    <center><button data-close-button class="close-button">&times;</button></center>
-                                </div>
-                                <div class="modal-body">
-                                    <?php
-                                        //search database for the printer and info
-                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'A8'"; //Specify printer id for each spot and columns to pull
-                                        $result = $mysqli->query($sql);
-                                        
-                                        if ($result->num_rows > 0) {
-                                            //output data of each row
-                                            while($row = $result->fetch_assoc()) {
-                                                echo "<h4 style='font-size:20px'>User: </h4><p style='color:blue'>" . $row["Printer_user"]. 
-                                                "</p><h4 style='font-size:20px'><br>Last used for: </h4><p style='color:blue'>" . $row["Printer_usetemp"]. 
-                                                "</p><h4 style='font-size:20px'><br>ECN: </h4><p style='color:blue'>" . $row["Printer_ecn"] . 
-                                                "</p><h4 style='font-size:20px'><br>Serial number: </h4><p style='color:blue'>" . $row["Printer_serial"] . "</p>";
-                                            }
-                                        } else {
-                                            echo "0 results";
-                                        }
-                                    ?>
-                                </div>
-                            </div>
-                            <div id="overlay"></div>
-                        </li>
-                        <li> 
-                            <h1>A9</h1>
-                            <?php
-                                //search database for the printer and info
-                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'A9'"; //Specify printer id for each spot and columns to pull
-                                $result = $mysqli->query($sql);
-                                
-                                if ($result->num_rows > 0) {
-                                    //output data of each row
-                                    while($row = $result->fetch_assoc()) {
-                                        echo "<div><br><h4 style='font-size:20px'>Status: </h4><p style='color:blue'><br>" . $row["Printer_status"]. "</p></div> <br>";
-                                    }
-                                } else {
-                                    echo "<br>0 results<br>";
-                                }
-                            ?>
-                            <button data-modal-target="#modalA9" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
-                            <div class="modal" id="modalA9"> <!-- Specify modal for each printer spot -->
-                                <div class="modal-header">
-                                    <div class="title">A9 Printer Details</div> <!-- Specify which printers details -->
-                                    <center><button data-close-button class="close-button">&times;</button></center>
-                                </div>
-                                <div class="modal-body">
-                                    <?php
-                                        //search database for the printer and info
-                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'A9'"; //Specify printer id for each spot and columns to pull
-                                        $result = $mysqli->query($sql);
-                                        
-                                        if ($result->num_rows > 0) {
-                                            //output data of each row
-                                            while($row = $result->fetch_assoc()) {
-                                                echo "<h4 style='font-size:20px'>User: </h4><p style='color:blue'>" . $row["Printer_user"]. 
-                                                "</p><h4 style='font-size:20px'><br>Last used for: </h4><p style='color:blue'>" . $row["Printer_usetemp"]. 
-                                                "</p><h4 style='font-size:20px'><br>ECN: </h4><p style='color:blue'>" . $row["Printer_ecn"] . 
-                                                "</p><h4 style='font-size:20px'><br>Serial number: </h4><p style='color:blue'>" . $row["Printer_serial"] . "</p>";
-                                            }
-                                        } else {
-                                            echo "0 results";
-                                        }
-                                    ?>
-                                </div>
-                            </div>
-                            <div id="overlay"></div>
-                        </li></li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <ul class="smallflex"> <!-- section b -->
-                <li>
-                    <ul class="cellflex">
-                        <li>
                             <h1>B1</h1>
                             <?php
                                 //search database for the printer and info
@@ -581,6 +305,282 @@
                                     <?php
                                         //search database for the printer and info
                                         $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'B3'"; //Specify printer id for each spot and columns to pull
+                                        $result = $mysqli->query($sql);
+                                        
+                                        if ($result->num_rows > 0) {
+                                            //output data of each row
+                                            while($row = $result->fetch_assoc()) {
+                                                echo "<h4 style='font-size:20px'>User: </h4><p style='color:blue'>" . $row["Printer_user"]. 
+                                                "</p><h4 style='font-size:20px'><br>Last used for: </h4><p style='color:blue'>" . $row["Printer_usetemp"]. 
+                                                "</p><h4 style='font-size:20px'><br>ECN: </h4><p style='color:blue'>" . $row["Printer_ecn"] . 
+                                                "</p><h4 style='font-size:20px'><br>Serial number: </h4><p style='color:blue'>" . $row["Printer_serial"] . "</p>";
+                                            }
+                                        } else {
+                                            echo "0 results";
+                                        }
+                                    ?>
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="cellflex">
+                        <li>
+                            <h1>C1</h1>
+                            <?php
+                                //search database for the printer and info
+                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'C1'"; //Specify printer id for each spot and columns to pull
+                                $result = $mysqli->query($sql);
+                                
+                                if ($result->num_rows > 0) {
+                                    //output data of each row
+                                    while($row = $result->fetch_assoc()) {
+                                        echo "<div><br><h4 style='font-size:20px'>Status: </h4><p style='color:blue'><br>" . $row["Printer_status"]. "</p></div> <br>";
+                                    }
+                                } else {
+                                    echo "<br>0 results<br>";
+                                }
+                            ?>
+                            <button data-modal-target="#modalC1" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
+                            <div class="modal" id="modalC1"> <!-- Specify modal for each printer spot -->
+                                <div class="modal-header">
+                                    <div class="title">C1 Printer Details</div> <!-- Specify which printers details -->
+                                    <center><button data-close-button class="close-button">&times;</button></center>
+                                </div>
+                                <div class="modal-body">
+                                    <?php
+                                        //search database for the printer and info
+                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'C1'"; //Specify printer id for each spot and columns to pull
+                                        $result = $mysqli->query($sql);
+                                        
+                                        if ($result->num_rows > 0) {
+                                            //output data of each row
+                                            while($row = $result->fetch_assoc()) {
+                                                echo "<h4 style='font-size:20px'>User: </h4><p style='color:blue'>" . $row["Printer_user"]. 
+                                                "</p><h4 style='font-size:20px'><br>Last used for: </h4><p style='color:blue'>" . $row["Printer_usetemp"]. 
+                                                "</p><h4 style='font-size:20px'><br>ECN: </h4><p style='color:blue'>" . $row["Printer_ecn"] . 
+                                                "</p><h4 style='font-size:20px'><br>Serial number: </h4><p style='color:blue'>" . $row["Printer_serial"] . "</p>";
+                                            }
+                                        } else {
+                                            echo "0 results";
+                                        }
+                                    ?>
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
+                        </li>
+                        <li>
+                            <h1>C2</h1>
+                            <?php
+                                //search database for the printer and info
+                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'C2'"; //Specify printer id for each spot and columns to pull
+                                $result = $mysqli->query($sql);
+                                
+                                if ($result->num_rows > 0) {
+                                    //output data of each row
+                                    while($row = $result->fetch_assoc()) {
+                                        echo "<div><br><h4 style='font-size:20px'>Status: </h4><p style='color:blue'><br>" . $row["Printer_status"]. "</p></div> <br>";
+                                    }
+                                } else {
+                                    echo "<br>0 results<br>";
+                                }
+                            ?>
+                            <button data-modal-target="#modalC2" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
+                            <div class="modal" id="modalC2"> <!-- Specify modal for each printer spot -->
+                                <div class="modal-header">
+                                    <div class="title">C2 Printer Details</div> <!-- Specify which printers details -->
+                                    <center><button data-close-button class="close-button">&times;</button></center>
+                                </div>
+                                <div class="modal-body">
+                                    <?php
+                                        //search database for the printer and info
+                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'C2'"; //Specify printer id for each spot and columns to pull
+                                        $result = $mysqli->query($sql);
+                                        
+                                        if ($result->num_rows > 0) {
+                                            //output data of each row
+                                            while($row = $result->fetch_assoc()) {
+                                                echo "<h4 style='font-size:20px'>User: </h4><p style='color:blue'>" . $row["Printer_user"]. 
+                                                "</p><h4 style='font-size:20px'><br>Last used for: </h4><p style='color:blue'>" . $row["Printer_usetemp"]. 
+                                                "</p><h4 style='font-size:20px'><br>ECN: </h4><p style='color:blue'>" . $row["Printer_ecn"] . 
+                                                "</p><h4 style='font-size:20px'><br>Serial number: </h4><p style='color:blue'>" . $row["Printer_serial"] . "</p>";
+                                            }
+                                        } else {
+                                            echo "0 results";
+                                        }
+                                    ?>
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
+                        </li>
+                        <li> 
+                            <h1>C3</h1>
+                            <?php
+                                //search database for the printer and info
+                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'C3'"; //Specify printer id for each spot and columns to pull
+                                $result = $mysqli->query($sql);
+                                
+                                if ($result->num_rows > 0) {
+                                    //output data of each row
+                                    while($row = $result->fetch_assoc()) {
+                                        echo "<div><br><h4 style='font-size:20px'>Status: </h4><p style='color:blue'><br>" . $row["Printer_status"]. "</p></div> <br>";
+                                    }
+                                } else {
+                                    echo "<br>0 results<br>";
+                                }
+                            ?>
+                            <button data-modal-target="#modalC3" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
+                            <div class="modal" id="modalC3"> <!-- Specify modal for each printer spot -->
+                                <div class="modal-header">
+                                    <div class="title">C3 Printer Details</div> <!-- Specify which printers details -->
+                                    <center><button data-close-button class="close-button">&times;</button></center>
+                                </div>
+                                <div class="modal-body">
+                                    <?php
+                                        //search database for the printer and info
+                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'C3'"; //Specify printer id for each spot and columns to pull
+                                        $result = $mysqli->query($sql);
+                                        
+                                        if ($result->num_rows > 0) {
+                                            //output data of each row
+                                            while($row = $result->fetch_assoc()) {
+                                                echo "<h4 style='font-size:20px'>User: </h4><p style='color:blue'>" . $row["Printer_user"]. 
+                                                "</p><h4 style='font-size:20px'><br>Last used for: </h4><p style='color:blue'>" . $row["Printer_usetemp"]. 
+                                                "</p><h4 style='font-size:20px'><br>ECN: </h4><p style='color:blue'>" . $row["Printer_ecn"] . 
+                                                "</p><h4 style='font-size:20px'><br>Serial number: </h4><p style='color:blue'>" . $row["Printer_serial"] . "</p>";
+                                            }
+                                        } else {
+                                            echo "0 results";
+                                        }
+                                    ?>
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
+                        </li></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="smallflex"> <!-- section A, B, C (4-6) -->
+                <li>
+                    <ul class="cellflex">
+                        <li>
+                            <h1>A4</h1>
+                            <?php
+                                //search database for the printer and info
+                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'A4'"; //Specify printer id for each spot and columns to pull
+                                $result = $mysqli->query($sql);
+                                
+                                if ($result->num_rows > 0) {
+                                    //output data of each row
+                                    while($row = $result->fetch_assoc()) {
+                                        echo "<div><br><h4 style='font-size:20px'>Status: </h4><p style='color:blue'><br>" . $row["Printer_status"]. "</p></div> <br>";
+                                    }
+                                } else {
+                                    echo "<br>0 results<br>";
+                                }
+                            ?>
+                            <button data-modal-target="#modalA4" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
+                            <div class="modal" id="modalA4"> <!-- Specify modal for each printer spot -->
+                                <div class="modal-header">
+                                    <div class="title">A4 Printer Details</div> <!-- Specify which printers details -->
+                                    <center><button data-close-button class="close-button">&times;</button></center>
+                                </div>
+                                <div class="modal-body">
+                                    <?php
+                                        //search database for the printer and info
+                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'A4'"; //Specify printer id for each spot and columns to pull
+                                        $result = $mysqli->query($sql);
+                                        
+                                        if ($result->num_rows > 0) {
+                                            //output data of each row
+                                            while($row = $result->fetch_assoc()) {
+                                                echo "<h4 style='font-size:20px'>User: </h4><p style='color:blue'>" . $row["Printer_user"]. 
+                                                "</p><h4 style='font-size:20px'><br>Last used for: </h4><p style='color:blue'>" . $row["Printer_usetemp"]. 
+                                                "</p><h4 style='font-size:20px'><br>ECN: </h4><p style='color:blue'>" . $row["Printer_ecn"] . 
+                                                "</p><h4 style='font-size:20px'><br>Serial number: </h4><p style='color:blue'>" . $row["Printer_serial"] . "</p>";
+                                            }
+                                        } else {
+                                            echo "0 results";
+                                        }
+                                    ?>
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
+                        </li>
+                        <li>
+                            <h1>A5</h1>
+                            <?php
+                                //search database for the printer and info
+                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'A5'"; //Specify printer id for each spot and columns to pull
+                                $result = $mysqli->query($sql);
+                                
+                                if ($result->num_rows > 0) {
+                                    //output data of each row
+                                    while($row = $result->fetch_assoc()) {
+                                        echo "<div><br><h4 style='font-size:20px'>Status: </h4><p style='color:blue'><br>" . $row["Printer_status"]. "</p></div> <br>";
+                                    }
+                                } else {
+                                    echo "<br>0 results<br>";
+                                }
+                            ?>
+                            <button data-modal-target="#modalA5" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
+                            <div class="modal" id="modalA5"> <!-- Specify modal for each printer spot -->
+                                <div class="modal-header">
+                                    <div class="title">A5 Printer Details</div> <!-- Specify which printers details -->
+                                    <center><button data-close-button class="close-button">&times;</button></center>
+                                </div>
+                                <div class="modal-body">
+                                    <?php
+                                        //search database for the printer and info
+                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'A5'"; //Specify printer id for each spot and columns to pull
+                                        $result = $mysqli->query($sql);
+                                        
+                                        if ($result->num_rows > 0) {
+                                            //output data of each row
+                                            while($row = $result->fetch_assoc()) {
+                                                echo "<h4 style='font-size:20px'>User: </h4><p style='color:blue'>" . $row["Printer_user"]. 
+                                                "</p><h4 style='font-size:20px'><br>Last used for: </h4><p style='color:blue'>" . $row["Printer_usetemp"]. 
+                                                "</p><h4 style='font-size:20px'><br>ECN: </h4><p style='color:blue'>" . $row["Printer_ecn"] . 
+                                                "</p><h4 style='font-size:20px'><br>Serial number: </h4><p style='color:blue'>" . $row["Printer_serial"] . "</p>";
+                                            }
+                                        } else {
+                                            echo "0 results";
+                                        }
+                                    ?>
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
+                        </li>
+                        <li>
+                            <h1>A6</h1>
+                            <?php
+                                //search database for the printer and info
+                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'A6'"; //Specify printer id for each spot and columns to pull
+                                $result = $mysqli->query($sql);
+                                
+                                if ($result->num_rows > 0) {
+                                    //output data of each row
+                                    while($row = $result->fetch_assoc()) {
+                                        echo "<div><br><h4 style='font-size:20px'>Status: </h4><p style='color:blue'><br>" . $row["Printer_status"]. "</p></div> <br>";
+                                    }
+                                } else {
+                                    echo "<br>0 results<br>";
+                                }
+                            ?>
+                            <button data-modal-target="#modalA6" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
+                            <div class="modal" id="modalA6"> <!-- Specify modal for each printer spot -->
+                                <div class="modal-header">
+                                    <div class="title">A6 Printer Details</div> <!-- Specify which printers details -->
+                                    <center><button data-close-button class="close-button">&times;</button></center>
+                                </div>
+                                <div class="modal-body">
+                                    <?php
+                                        //search database for the printer and info
+                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'A6'"; //Specify printer id for each spot and columns to pull
                                         $result = $mysqli->query($sql);
                                         
                                         if ($result->num_rows > 0) {
@@ -740,10 +740,10 @@
                 <li>
                     <ul class="cellflex">
                         <li>
-                            <h1>B7</h1>
+                            <h1>C4</h1>
                             <?php
                                 //search database for the printer and info
-                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'B7'"; //Specify printer id for each spot and columns to pull
+                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'C4'"; //Specify printer id for each spot and columns to pull
                                 $result = $mysqli->query($sql);
                                 
                                 if ($result->num_rows > 0) {
@@ -755,16 +755,16 @@
                                     echo "<br>0 results<br>";
                                 }
                             ?>
-                            <button data-modal-target="#modalB7" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
-                            <div class="modal" id="modalB7"> <!-- Specify modal for each printer spot -->
+                            <button data-modal-target="#modalC4" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
+                            <div class="modal" id="modalC4"> <!-- Specify modal for each printer spot -->
                                 <div class="modal-header">
-                                    <div class="title">B7 Printer Details</div> <!-- Specify which printers details -->
+                                    <div class="title">C4 Printer Details</div> <!-- Specify which printers details -->
                                     <center><button data-close-button class="close-button">&times;</button></center>
                                 </div>
                                 <div class="modal-body">
                                     <?php
                                         //search database for the printer and info
-                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'B7'"; //Specify printer id for each spot and columns to pull
+                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'C4'"; //Specify printer id for each spot and columns to pull
                                         $result = $mysqli->query($sql);
                                         
                                         if ($result->num_rows > 0) {
@@ -784,10 +784,10 @@
                             <div id="overlay"></div>
                         </li>
                         <li>
-                            <h1>B8</h1>
+                            <h1>C5</h1>
                             <?php
                                 //search database for the printer and info
-                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'B8'"; //Specify printer id for each spot and columns to pull
+                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'C5'"; //Specify printer id for each spot and columns to pull
                                 $result = $mysqli->query($sql);
                                 
                                 if ($result->num_rows > 0) {
@@ -799,16 +799,16 @@
                                     echo "<br>0 results<br>";
                                 }
                             ?>
-                            <button data-modal-target="#modalB8" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
-                            <div class="modal" id="modalB8"> <!-- Specify modal for each printer spot -->
+                            <button data-modal-target="#modalC5" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
+                            <div class="modal" id="modalC5"> <!-- Specify modal for each printer spot -->
                                 <div class="modal-header">
-                                    <div class="title">B8 Printer Details</div> <!-- Specify which printers details -->
+                                    <div class="title">C5 Printer Details</div> <!-- Specify which printers details -->
                                     <center><button data-close-button class="close-button">&times;</button></center>
                                 </div>
                                 <div class="modal-body">
                                     <?php
                                         //search database for the printer and info
-                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'B8'"; //Specify printer id for each spot and columns to pull
+                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'C5'"; //Specify printer id for each spot and columns to pull
                                         $result = $mysqli->query($sql);
                                         
                                         if ($result->num_rows > 0) {
@@ -828,10 +828,10 @@
                             <div id="overlay"></div>
                         </li>
                         <li>
-                            <h1>B9</h1>
+                            <h1>C6</h1>
                             <?php
                                 //search database for the printer and info
-                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'B9'"; //Specify printer id for each spot and columns to pull
+                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'C6'"; //Specify printer id for each spot and columns to pull
                                 $result = $mysqli->query($sql);
                                 
                                 if ($result->num_rows > 0) {
@@ -843,16 +843,16 @@
                                     echo "<br>0 results<br>";
                                 }
                             ?>
-                            <button data-modal-target="#modalB9" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
-                            <div class="modal" id="modalB9"> <!-- Specify modal for each printer spot -->
+                            <button data-modal-target="#modalC6" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
+                            <div class="modal" id="modalC6"> <!-- Specify modal for each printer spot -->
                                 <div class="modal-header">
-                                    <div class="title">B9 Printer Details</div> <!-- Specify which printers details -->
+                                    <div class="title">C6 Printer Details</div> <!-- Specify which printers details -->
                                     <center><button data-close-button class="close-button">&times;</button></center>
                                 </div>
                                 <div class="modal-body">
                                     <?php
                                         //search database for the printer and info
-                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'B9'"; //Specify printer id for each spot and columns to pull
+                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'C6'"; //Specify printer id for each spot and columns to pull
                                         $result = $mysqli->query($sql);
                                         
                                         if ($result->num_rows > 0) {
@@ -879,147 +879,7 @@
 
     <ul class='bigflex'> <!-- lower sections -->
         <li>
-            <ul class="smallflex"> <!-- section c -->
-                <li>
-                    <ul class="cellflex">
-                        <li>
-                            <h1>C1</h1>
-                            <?php
-                                //search database for the printer and info
-                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'C1'"; //Specify printer id for each spot and columns to pull
-                                $result = $mysqli->query($sql);
-                                
-                                if ($result->num_rows > 0) {
-                                    //output data of each row
-                                    while($row = $result->fetch_assoc()) {
-                                        echo "<div><br><h4 style='font-size:20px'>Status: </h4><p style='color:blue'><br>" . $row["Printer_status"]. "</p></div> <br>";
-                                    }
-                                } else {
-                                    echo "<br>0 results<br>";
-                                }
-                            ?>
-                            <button data-modal-target="#modalC1" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
-                            <div class="modal" id="modalC1"> <!-- Specify modal for each printer spot -->
-                                <div class="modal-header">
-                                    <div class="title">C1 Printer Details</div> <!-- Specify which printers details -->
-                                    <center><button data-close-button class="close-button">&times;</button></center>
-                                </div>
-                                <div class="modal-body">
-                                    <?php
-                                        //search database for the printer and info
-                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'C1'"; //Specify printer id for each spot and columns to pull
-                                        $result = $mysqli->query($sql);
-                                        
-                                        if ($result->num_rows > 0) {
-                                            //output data of each row
-                                            while($row = $result->fetch_assoc()) {
-                                                echo "<h4 style='font-size:20px'>User: </h4><p style='color:blue'>" . $row["Printer_user"]. 
-                                                "</p><h4 style='font-size:20px'><br>Last used for: </h4><p style='color:blue'>" . $row["Printer_usetemp"]. 
-                                                "</p><h4 style='font-size:20px'><br>ECN: </h4><p style='color:blue'>" . $row["Printer_ecn"] . 
-                                                "</p><h4 style='font-size:20px'><br>Serial number: </h4><p style='color:blue'>" . $row["Printer_serial"] . "</p>";
-                                            }
-                                        } else {
-                                            echo "0 results";
-                                        }
-                                    ?>
-                                </div>
-                            </div>
-                            <div id="overlay"></div>
-                        </li>
-                        <li>
-                            <h1>C2</h1>
-                            <?php
-                                //search database for the printer and info
-                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'C2'"; //Specify printer id for each spot and columns to pull
-                                $result = $mysqli->query($sql);
-                                
-                                if ($result->num_rows > 0) {
-                                    //output data of each row
-                                    while($row = $result->fetch_assoc()) {
-                                        echo "<div><br><h4 style='font-size:20px'>Status: </h4><p style='color:blue'><br>" . $row["Printer_status"]. "</p></div> <br>";
-                                    }
-                                } else {
-                                    echo "<br>0 results<br>";
-                                }
-                            ?>
-                            <button data-modal-target="#modalC2" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
-                            <div class="modal" id="modalC2"> <!-- Specify modal for each printer spot -->
-                                <div class="modal-header">
-                                    <div class="title">C2 Printer Details</div> <!-- Specify which printers details -->
-                                    <center><button data-close-button class="close-button">&times;</button></center>
-                                </div>
-                                <div class="modal-body">
-                                    <?php
-                                        //search database for the printer and info
-                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'C2'"; //Specify printer id for each spot and columns to pull
-                                        $result = $mysqli->query($sql);
-                                        
-                                        if ($result->num_rows > 0) {
-                                            //output data of each row
-                                            while($row = $result->fetch_assoc()) {
-                                                echo "<h4 style='font-size:20px'>User: </h4><p style='color:blue'>" . $row["Printer_user"]. 
-                                                "</p><h4 style='font-size:20px'><br>Last used for: </h4><p style='color:blue'>" . $row["Printer_usetemp"]. 
-                                                "</p><h4 style='font-size:20px'><br>ECN: </h4><p style='color:blue'>" . $row["Printer_ecn"] . 
-                                                "</p><h4 style='font-size:20px'><br>Serial number: </h4><p style='color:blue'>" . $row["Printer_serial"] . "</p>";
-                                            }
-                                        } else {
-                                            echo "0 results";
-                                        }
-                                    ?>
-                                </div>
-                            </div>
-                            <div id="overlay"></div>
-                        </li>
-                        <li>
-                            <h1>C3</h1>
-                            <?php
-                                //search database for the printer and info
-                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'C3'"; //Specify printer id for each spot and columns to pull
-                                $result = $mysqli->query($sql);
-                                
-                                if ($result->num_rows > 0) {
-                                    //output data of each row
-                                    while($row = $result->fetch_assoc()) {
-                                        echo "<div><br><h4 style='font-size:20px'>Status: </h4><p style='color:blue'><br>" . $row["Printer_status"]. "</p></div> <br>";
-                                    }
-                                } else {
-                                    echo "<br>0 results<br>";
-                                }
-                            ?>
-                            <button data-modal-target="#modalC3" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
-                            <div class="modal" id="modalC3"> <!-- Specify modal for each printer spot -->
-                                <div class="modal-header">
-                                    <div class="title">C3 Printer Details</div> <!-- Specify which printers details -->
-                                    <center><button data-close-button class="close-button">&times;</button></center>
-                                </div>
-                                <div class="modal-body">
-                                    <?php
-                                        //search database for the printer and info
-                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'C3'"; //Specify printer id for each spot and columns to pull
-                                        $result = $mysqli->query($sql);
-                                        
-                                        if ($result->num_rows > 0) {
-                                            //output data of each row
-                                            while($row = $result->fetch_assoc()) {
-                                                echo "<h4 style='font-size:20px'>User: </h4><p style='color:blue'>" . $row["Printer_user"]. 
-                                                "</p><h4 style='font-size:20px'><br>Last used for: </h4><p style='color:blue'>" . $row["Printer_usetemp"]. 
-                                                "</p><h4 style='font-size:20px'><br>ECN: </h4><p style='color:blue'>" . $row["Printer_ecn"] . 
-                                                "</p><h4 style='font-size:20px'><br>Serial number: </h4><p style='color:blue'>" . $row["Printer_serial"] . "</p>";
-                                            }
-                                        } else {
-                                            echo "0 results";
-                                        }
-                                    ?>
-                                </div>
-                            </div>
-                            <div id="overlay"></div>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <ul class="smallflex"> <!-- section d -->
+            <ul class="smallflex"> <!-- section D 1-3 -->
                 <li>
                     <ul class="cellflex">
                         <li>
@@ -1111,8 +971,188 @@
                             <div id="overlay"></div>
                         </li>
                         <li>
-                            <h1>------</h1>
-                            
+                            <h1>D3</h1>
+                            <?php
+                                //search database for the printer and info
+                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'D3'"; //Specify printer id for each spot and columns to pull
+                                $result = $mysqli->query($sql);
+                                
+                                if ($result->num_rows > 0) {
+                                    //output data of each row
+                                    while($row = $result->fetch_assoc()) {
+                                        echo "<div><br><h4 style='font-size:20px'>Status: </h4><p style='color:blue'><br>" . $row["Printer_status"]. "</p></div> <br>";
+                                    }
+                                } else {
+                                    echo "<br>0 results<br>";
+                                }
+                            ?>
+                            <button data-modal-target="#modalD3" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
+                            <div class="modal" id="modalD3"> <!-- Specify modal for each printer spot -->
+                                <div class="modal-header">
+                                    <div class="title">D3 Printer Details</div> <!-- Specify which printers details -->
+                                    <center><button data-close-button class="close-button">&times;</button></center>
+                                </div>
+                                <div class="modal-body">
+                                    <?php
+                                        //search database for the printer and info
+                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'D3'"; //Specify printer id for each spot and columns to pull
+                                        $result = $mysqli->query($sql);
+                                        
+                                        if ($result->num_rows > 0) {
+                                            //output data of each row
+                                            while($row = $result->fetch_assoc()) {
+                                                echo "<h4 style='font-size:20px'>User: </h4><p style='color:blue'>" . $row["Printer_user"]. 
+                                                "</p><h4 style='font-size:20px'><br>Last used for: </h4><p style='color:blue'>" . $row["Printer_usetemp"]. 
+                                                "</p><h4 style='font-size:20px'><br>ECN: </h4><p style='color:blue'>" . $row["Printer_ecn"] . 
+                                                "</p><h4 style='font-size:20px'><br>Serial number: </h4><p style='color:blue'>" . $row["Printer_serial"] . "</p>";
+                                            }
+                                        } else {
+                                            echo "0 results";
+                                        }
+                                    ?>
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="smallflex"> <!-- section D 4-6 -->
+                <li>
+                    <ul class="cellflex">
+                        <li>
+                            <h1>D4</h1>
+                            <?php
+                                //search database for the printer and info
+                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'D4'"; //Specify printer id for each spot and columns to pull
+                                $result = $mysqli->query($sql);
+                                
+                                if ($result->num_rows > 0) {
+                                    //output data of each row
+                                    while($row = $result->fetch_assoc()) {
+                                        echo "<div><br><h4 style='font-size:20px'>Status: </h4><p style='color:blue'><br>" . $row["Printer_status"]. "</p></div> <br>";
+                                    }
+                                } else {
+                                    echo "<br>0 results<br>";
+                                }
+                            ?>
+                            <button data-modal-target="#modalD4" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
+                            <div class="modal" id="modalD4"> <!-- Specify modal for each printer spot -->
+                                <div class="modal-header">
+                                    <div class="title">D4 Printer Details</div> <!-- Specify which printers details -->
+                                    <center><button data-close-button class="close-button">&times;</button></center>
+                                </div>
+                                <div class="modal-body">
+                                    <?php
+                                        //search database for the printer and info
+                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'D4'"; //Specify printer id for each spot and columns to pull
+                                        $result = $mysqli->query($sql);
+                                        
+                                        if ($result->num_rows > 0) {
+                                            //output data of each row
+                                            while($row = $result->fetch_assoc()) {
+                                                echo "<h4 style='font-size:20px'>User: </h4><p style='color:blue'>" . $row["Printer_user"]. 
+                                                "</p><h4 style='font-size:20px'><br>Last used for: </h4><p style='color:blue'>" . $row["Printer_usetemp"]. 
+                                                "</p><h4 style='font-size:20px'><br>ECN: </h4><p style='color:blue'>" . $row["Printer_ecn"] . 
+                                                "</p><h4 style='font-size:20px'><br>Serial number: </h4><p style='color:blue'>" . $row["Printer_serial"] . "</p>";
+                                            }
+                                        } else {
+                                            echo "0 results";
+                                        }
+                                    ?>
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
+                        </li>
+                        <li>
+                            <h1>D5</h1>
+                            <?php
+                                //search database for the printer and info
+                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'D5'"; //Specify printer id for each spot and columns to pull
+                                $result = $mysqli->query($sql);
+                                
+                                if ($result->num_rows > 0) {
+                                    //output data of each row
+                                    while($row = $result->fetch_assoc()) {
+                                        echo "<div><br><h4 style='font-size:20px'>Status: </h4><p style='color:blue'><br>" . $row["Printer_status"]. "</p></div> <br>";
+                                    }
+                                } else {
+                                    echo "<br>0 results<br>";
+                                }
+                            ?>
+                            <button data-modal-target="#modalD5" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
+                            <div class="modal" id="modalD5"> <!-- Specify modal for each printer spot -->
+                                <div class="modal-header">
+                                    <div class="title">D5 Printer Details</div> <!-- Specify which printers details -->
+                                    <center><button data-close-button class="close-button">&times;</button></center>
+                                </div>
+                                <div class="modal-body">
+                                    <?php
+                                        //search database for the printer and info
+                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'D5'"; //Specify printer id for each spot and columns to pull
+                                        $result = $mysqli->query($sql);
+                                        
+                                        if ($result->num_rows > 0) {
+                                            //output data of each row
+                                            while($row = $result->fetch_assoc()) {
+                                                echo "<h4 style='font-size:20px'>User: </h4><p style='color:blue'>" . $row["Printer_user"]. 
+                                                "</p><h4 style='font-size:20px'><br>Last used for: </h4><p style='color:blue'>" . $row["Printer_usetemp"]. 
+                                                "</p><h4 style='font-size:20px'><br>ECN: </h4><p style='color:blue'>" . $row["Printer_ecn"] . 
+                                                "</p><h4 style='font-size:20px'><br>Serial number: </h4><p style='color:blue'>" . $row["Printer_serial"] . "</p>";
+                                            }
+                                        } else {
+                                            echo "0 results";
+                                        }
+                                    ?>
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
+                        </li>
+                        <li>
+                            <h1>D6</h1>
+                            <?php
+                                //search database for the printer and info
+                                $sql = "SELECT PrinterID, Printer_status, Printer_user, Printer_usetemp FROM printers_table WHERE PrinterID LIKE 'D6'"; //Specify printer id for each spot and columns to pull
+                                $result = $mysqli->query($sql);
+                                
+                                if ($result->num_rows > 0) {
+                                    //output data of each row
+                                    while($row = $result->fetch_assoc()) {
+                                        echo "<div><br><h4 style='font-size:20px'>Status: </h4><p style='color:blue'><br>" . $row["Printer_status"]. "</p></div> <br>";
+                                    }
+                                } else {
+                                    echo "<br>0 results<br>";
+                                }
+                            ?>
+                            <button data-modal-target="#modalD6" class="modal-button">View details</button><!-- Specify modal target for each printer spot -->
+                            <div class="modal" id="modalD6"> <!-- Specify modal for each printer spot -->
+                                <div class="modal-header">
+                                    <div class="title">D6 Printer Details</div> <!-- Specify which printers details -->
+                                    <center><button data-close-button class="close-button">&times;</button></center>
+                                </div>
+                                <div class="modal-body">
+                                    <?php
+                                        //search database for the printer and info
+                                        $sql = "SELECT PrinterID, Printer_user, Printer_usetemp, Printer_ecn, Printer_serial FROM printers_table WHERE PrinterID LIKE 'D6'"; //Specify printer id for each spot and columns to pull
+                                        $result = $mysqli->query($sql);
+                                        
+                                        if ($result->num_rows > 0) {
+                                            //output data of each row
+                                            while($row = $result->fetch_assoc()) {
+                                                echo "<h4 style='font-size:20px'>User: </h4><p style='color:blue'>" . $row["Printer_user"]. 
+                                                "</p><h4 style='font-size:20px'><br>Last used for: </h4><p style='color:blue'>" . $row["Printer_usetemp"]. 
+                                                "</p><h4 style='font-size:20px'><br>ECN: </h4><p style='color:blue'>" . $row["Printer_ecn"] . 
+                                                "</p><h4 style='font-size:20px'><br>Serial number: </h4><p style='color:blue'>" . $row["Printer_serial"] . "</p>";
+                                            }
+                                        } else {
+                                            echo "0 results";
+                                        }
+                                    ?>
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
                         </li>
                     </ul>
                 </li>
